@@ -11,7 +11,7 @@ class DiscordClient
 	{
 		trace("Discord Client starting...");
 		DiscordRpc.start({
-			clientID: "814588678700924999",
+			clientID: "852745353031450664",
 			onReady: onReady,
 			onError: onError,
 			onDisconnected: onDisconnected
@@ -28,18 +28,13 @@ class DiscordClient
 		DiscordRpc.shutdown();
 	}
 
-	public static function shutdown()
-	{
-		DiscordRpc.shutdown();
-	}
-	
 	static function onReady()
 	{
 		DiscordRpc.presence({
 			details: "In the Menus",
 			state: null,
 			largeImageKey: 'icon',
-			largeImageText: "Friday Night Funkin'"
+			largeImageText: "Friday Night Funkin' j-bug [MOD]"
 		});
 	}
 

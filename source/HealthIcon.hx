@@ -34,6 +34,11 @@ class HealthIcon extends FlxSprite
 		animation.add('parents-christmas', [17], 0, false, isPlayer);
 		animation.add('monster', [19, 20], 0, false, isPlayer);
 		animation.add('monster-christmas', [19, 20], 0, false, isPlayer);
+		animation.add('RobloxNoob', [24, 25], 0, false, isPlayer);
+		animation.add('PAPYRUS', [26, 27], 0, false, isPlayer);
+		animation.add('YAKUZA-KIRYU', [28, 29], 0, false, isPlayer);
+		animation.add('gf-barstool', [16], 0, false, isPlayer);
+
 		animation.play(char);
 		scrollFactor.set();
 	}

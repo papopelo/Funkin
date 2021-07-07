@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gf_barstool.png">
+	<!-- Created with Adobe Animate version 19.2.0.405 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="gf dance barstool0000" x="10" y="3092" width="1409" height="1011" frameX="0" frameY="-6" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0001" x="10" y="3092" width="1409" height="1011" frameX="0" frameY="-6" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0002" x="1429" y="7119" width="1409" height="1003" frameX="0" frameY="-14" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0003" x="2848" y="3047" width="1409" height="998" frameX="0" frameY="-20" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0004" x="2848" y="1023" width="1409" height="1002" frameX="0" frameY="-16" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0005" x="2848" y="2035" width="1409" height="1002" frameX="0" frameY="-16" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0006" x="1429" y="4077" width="1409" height="1004" frameX="0" frameY="-14" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0007" x="10" y="1038" width="1409" height="1017" frameX="0" frameY="-1" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0008" x="10" y="1038" width="1409" height="1017" frameX="0" frameY="-1" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0009" x="10" y="1038" width="1409" height="1017" frameX="0" frameY="-1" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0010" x="10" y="10" width="1409" height="1018"/>
+	<SubTexture name="gf dance barstool0011" x="10" y="10" width="1409" height="1018"/>
+	<SubTexture name="gf dance barstool0012" x="10" y="10" width="1409" height="1018"/>
+	<SubTexture name="gf dance barstool0013" x="10" y="2065" width="1409" height="1017" frameX="0" frameY="-1" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0014" x="10" y="2065" width="1409" height="1017" frameX="0" frameY="-1" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0015" x="2848" y="10" width="1409" height="1003" frameX="0" frameY="-15" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0016" x="1429" y="10" width="1409" height="1008" frameX="0" frameY="-9" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0017" x="1429" y="1028" width="1409" height="1008" frameX="0" frameY="-9" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0018" x="1429" y="3062" width="1409" height="1005" frameX="0" frameY="-12" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0019" x="1429" y="5091" width="1409" height="1004" frameX="0" frameY="-14" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0020" x="1429" y="6105" width="1409" height="1004" frameX="0" frameY="-14" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0021" x="1429" y="2046" width="1409" height="1006" frameX="0" frameY="-12" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0022" x="10" y="4113" width="1409" height="1011" frameX="0" frameY="-7" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0023" x="10" y="4113" width="1409" height="1011" frameX="0" frameY="-7" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0024" x="10" y="4113" width="1409" height="1011" frameX="0" frameY="-7" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0025" x="10" y="5134" width="1409" height="1011" frameX="0" frameY="-7" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0026" x="10" y="5134" width="1409" height="1011" frameX="0" frameY="-7" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0027" x="10" y="5134" width="1409" height="1011" frameX="0" frameY="-7" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0028" x="10" y="6155" width="1409" height="1010" frameX="0" frameY="-8" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf dance barstool0029" x="10" y="6155" width="1409" height="1010" frameX="0" frameY="-8" frameWidth="1409" frameHeight="1018"/>
+	<SubTexture name="gf sad barstool0000" x="2848" y="7061" width="1409" height="989" frameX="0" frameY="-3" frameWidth="1409" frameHeight="992"/>
+	<SubTexture name="gf sad barstool0001" x="2848" y="7061" width="1409" height="989" frameX="0" frameY="-3" frameWidth="1409" frameHeight="992"/>
+	<SubTexture name="gf sad barstool0002" x="10" y="7175" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0003" x="10" y="7175" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0004" x="2848" y="4055" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0005" x="2848" y="4055" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0006" x="2848" y="5057" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0007" x="2848" y="5057" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0008" x="2848" y="6059" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0009" x="2848" y="6059" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0010" x="10" y="7175" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0011" x="10" y="7175" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0012" x="2848" y="4055" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0013" x="2848" y="4055" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0014" x="2848" y="5057" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0015" x="2848" y="5057" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0016" x="2848" y="6059" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0017" x="2848" y="6059" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0018" x="10" y="7175" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0019" x="10" y="7175" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0020" x="2848" y="4055" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0021" x="2848" y="4055" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0022" x="2848" y="5057" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0023" x="2848" y="5057" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0024" x="2848" y="6059" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0025" x="2848" y="6059" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0026" x="10" y="7175" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0027" x="10" y="7175" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0028" x="2848" y="4055" width="1409" height="992"/>
+	<SubTexture name="gf sad barstool0029" x="2848" y="4055" width="1409" height="992"/>
+</TextureAtlas>

@@ -183,6 +183,8 @@ class PlayState extends MusicBeatState
 				dialogue = CoolUtil.coolTextFile(Paths.txt('roses/rosesDialogue'));
 			case 'thorns':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('thorns/thornsDialogue'));
+			case 'down-to-the-bone':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('down-to-the-bone/PapyrusDialogue'));
 		}
 
 		#if desktop
@@ -540,6 +542,89 @@ class PlayState extends MusicBeatState
 		                            add(waveSpriteFG);
 		                    */
 		          }
+				  case 'crossing-my-road':
+				  {
+						curStage = 'His_Road';
+
+
+						var bg:FlxSprite = new FlxSprite(-100).loadGraphic(Paths.image('His_Road/sky'));
+						bg.scrollFactor.set(0.1, 0.1);
+						add(bg);
+
+							var city:FlxSprite = new FlxSprite(-10).loadGraphic(Paths.image('His_Road/CROSSROADS'));
+						city.scrollFactor.set(0.3, 0.3);
+						city.setGraphicSize(Std.int(city.width * 0.85));
+						city.updateHitbox();
+						add(city);
+
+						phillyCityLights = new FlxTypedGroup<FlxSprite>();
+						add(phillyCityLights);
+
+						for (i in 0...5)
+						{
+								var light:FlxSprite = new FlxSprite(city.x).loadGraphic(Paths.image('His_Road/win' + i));
+								light.scrollFactor.set(0.3, 0.3);
+								light.visible = false;
+								light.setGraphicSize(Std.int(light.width * 0.85));
+								light.updateHitbox();
+								light.antialiasing = true;
+								phillyCityLights.add(light);
+						}
+
+						var streetBehind:FlxSprite = new FlxSprite(-40, 50).loadGraphic(Paths.image('His_Road/behindTrain'));
+						add(streetBehind);
+
+							phillyTrain = new FlxSprite(2000, 360).loadGraphic(Paths.image('His_Road/train'));
+						add(phillyTrain);
+
+						// var cityLights:FlxSprite = new FlxSprite().loadGraphic(AssetPaths.win0.png);
+
+						var street:FlxSprite = new FlxSprite(-40, streetBehind.y).loadGraphic(Paths.image('His_Road/BRICK'));
+							add(street);
+				  }
+				  case 'down-to-the-bone':
+				  {
+						defaultCamZoom = 0.9;
+						curStage = 'Snowdin';
+						var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('Snowdin/BACKGROUND'));
+						bg.antialiasing = true;
+						bg.scrollFactor.set(0.9, 0.9);
+						bg.active = false;
+						add(bg);
+
+						var stageFront:FlxSprite = new FlxSprite(-650, 600).loadGraphic(Paths.image('Snowdin/FLOOR'));
+						stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+						stageFront.updateHitbox();
+						stageFront.antialiasing = true;
+						stageFront.scrollFactor.set(0.9, 0.9);
+						stageFront.active = false;
+						add(stageFront);
+
+						santa = new FlxSprite(-840, 150);
+						santa.frames = Paths.getSparrowAtlas('Snowdin/gf_mad');
+						santa.animation.addByPrefix('idle', 'gf mad idle', 24, false);
+						santa.antialiasing = true;
+						add(santa);
+				  }
+		          case 'discernment':
+		          {
+		                  defaultCamZoom = 0.9;
+		                  curStage = 'Bar';
+		                  var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('Bar/stageback'));
+		                  bg.antialiasing = true;
+		                  bg.scrollFactor.set(0.9, 0.9);
+		                  bg.active = false;
+		                  add(bg);
+
+		                  var stageCurtains:FlxSprite = new FlxSprite(-500, -300).loadGraphic(Paths.image('Bar/stagecurtains'));
+		                  stageCurtains.setGraphicSize(Std.int(stageCurtains.width * 0.9));
+		                  stageCurtains.updateHitbox();
+		                  stageCurtains.antialiasing = true;
+		                  stageCurtains.scrollFactor.set(1.3, 1.3);
+		                  stageCurtains.active = false;
+
+		                  add(stageCurtains);
+		          }
 		          default:
 		          {
 		                  defaultCamZoom = 0.9;
@@ -611,6 +696,13 @@ class PlayState extends MusicBeatState
 			case 'monster-christmas':
 				dad.y += 130;
 			case 'dad':
+				camPos.x += 400;
+			case 'RobloxNoob':
+				camPos.x += 600;
+				dad.y += 300;
+			case 'PAPYRUS':
+				camPos.x += 400;
+			case 'YAKUZA-KIRYU':
 				camPos.x += 400;
 			case 'pico':
 				camPos.x += 600;
@@ -801,6 +893,8 @@ class PlayState extends MusicBeatState
 					schoolIntro(doof);
 				case 'thorns':
 					schoolIntro(doof);
+				case 'down-to-the-bone':
+					schoolIntro(doof);
 				default:
 					startCountdown();
 			}
@@ -928,6 +1022,7 @@ class PlayState extends MusicBeatState
 			introAssets.set('default', ['ready', "set", "go"]);
 			introAssets.set('school', ['weeb/pixelUI/ready-pixel', 'weeb/pixelUI/set-pixel', 'weeb/pixelUI/date-pixel']);
 			introAssets.set('schoolEvil', ['weeb/pixelUI/ready-pixel', 'weeb/pixelUI/set-pixel', 'weeb/pixelUI/date-pixel']);
+			introAssets.set('Bar', ['Bar/ready,set,fight!/ready', 'Bar/ready,set,fight!/set', 'Bar/ready,set,fight!/fight!']);
 
 			var introAlts:Array<String> = introAssets.get('default');
 			var altSuffix:String = "";
@@ -1771,7 +1866,18 @@ class PlayState extends MusicBeatState
 				PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + difficulty, PlayState.storyPlaylist[0]);
 				FlxG.sound.music.stop();
 
-				LoadingState.loadAndSwitchState(new PlayState());
+				new FlxTimer().start(1, function(tmr:FlxTimer)
+				{
+					if(curSong.toLowerCase() == "down-to-the-bone"){
+
+						LoadingState.loadAndSwitchState(new VideoState('assets/videos/intro.webm', new PlayState()), true);
+					}
+					else {
+
+						LoadingState.loadAndSwitchState(new PlayState(), true);
+
+					}
+				});
 			}
 		}
 		else
@@ -2404,6 +2510,26 @@ class PlayState extends MusicBeatState
 		if (!boyfriend.animation.curAnim.name.startsWith("sing"))
 		{
 			boyfriend.playAnim('idle');
+		}
+
+		if (curBeat == 14 && curSong == 'CROSSING-MY-ROAD')
+		{
+			boyfriend.playAnim('pre-attack', true);
+		}
+
+		if (curBeat == 15 && curSong == 'CROSSING-MY-ROAD')
+		{
+			boyfriend.playAnim('atack', true);
+		}
+
+		if (curBeat == 144 && curSong == 'CROSSING-MY-ROAD')
+		{
+			boyfriend.playAnim('pre-attack', true);
+		}
+
+		if (curBeat == 123 && curSong == 'DISCERNMENT')
+		{
+			boyfriend.playAnim('hit', true);
 		}
 
 		if (curBeat % 8 == 7 && curSong == 'Bopeebo')
